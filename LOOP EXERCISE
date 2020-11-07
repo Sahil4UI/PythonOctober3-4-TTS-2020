@@ -1,0 +1,57 @@
+'''
+first=0
+second=1
+
+print(first)
+print(second)
+
+for i in range(8):
+    third=first+second
+    print(third)
+    first,second= second,third
+'''
+#input a string, then find total count of vowels, consonants in it
+'''
+word=input("Enter a string : ")
+word=word.lower()
+vowels="aeiou"
+vc=0
+cc=0
+
+for i in range(len(word)):
+    if word[i] >= 'a' and word[i]<='z':
+        if word[i] in vowels:
+            vc=vc+1
+        else:
+            cc=cc+1
+        
+print("vowels count : ",vc)
+
+print("Cons count : ",cc)
+'''
+"""
+*
+**
+***
+****
+*****
+"""
+"""
+for i in range(1,6):
+    print("*"*i)
+"""
+'''
+    *
+   ***
+  *****
+ *******
+*********
+'''
+'''
+for i in range(1,6):
+    print(" "*(5-i) +"*"*(2*i-1))
+'''
+#Nested for Loop
+for i in range(1,3):
+    for j in range(1,3):
+        print("i=",i,",j=",j)
